@@ -1,0 +1,110 @@
+.homePage {
+  position: relative;
+  background-color: black;
+  height: 100%;
+  padding-bottom: 80%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.carouselBlock {
+  margin-top: 0%;
+  width: 100%;
+  height: 90vh;
+  background-color: black;
+  color: white;
+  padding-bottom: 3%;
+}
+
+.insideCarousel {
+  display: flex;
+  justify-content: space-around;
+}
+
+.screeningsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 992px) {
+  .filmposter {
+    height: 700px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  .carouselBlock {
+    padding-bottom: 7%;
+  }
+}
+
+.filmposter {
+  margin: 0 auto;
+  height: 70%;
+  width: 70%;
+  transition: 0.6s linear;
+}
+
+.filmposter:hover {
+  opacity: 0.5;
+}
+
+.filmbox {
+  min-height: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.filmname {
+  margin: 0 auto;
+  margin-top: 25px;
+  font-size: 25px;
+  letter-spacing: 1px;
+  width: 400px;
+  height: 40px;
+  font-weight: 700;
+}
+
+.filmSchedule {
+  margin-top: 60px;
+  display: grid;
+  z-index: 1;
+  height: 130px;
+  border: 1px solid white;
+  position: relative;
+  overflow: hidden;
+}
+
+.filmWrapperSchedule {
+  grid-area: 1 / 1;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  background-color: black;
+  transition: 0.8s linear;
+}
+
+.filmWrapperSchedule:hover {
+  opacity: 0.7;
+}
+
+.filmWrapperSchedule:hover .price {
+  opacity: 1;
+}
+
+.price {
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.hoursBlock {
+  margin-top: 5px;
+  font-size: 18px;
+  color: white;
+}
+
+.hoursBlock:hover {
+  text-decoration: underline;
+  color: white;
+}

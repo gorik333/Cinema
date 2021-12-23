@@ -1,0 +1,106 @@
+.aboutPage {
+  position: relative;
+  background-color: black;
+  height: 100%;
+  padding-bottom: 80%;
+  display: flex;
+  color: white;
+}
+
+.moviesImage {
+  min-width: 170%;
+  overflow: visible;
+  margin-left: -77%;
+}
+
+.aboutImage {
+  height: 100%;
+}
+
+.aboutText {
+  text-align: center;
+  background-color: black;
+  width: 50%;
+}
+
+.aboutHeader {
+  margin: 0 auto;
+  text-transform: uppercase;
+  border: 1px solid white;
+  width: 170px;
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.aboutInfo {
+  font-size: 25px;
+  width: 90%;
+  text-align: start;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.aboutBox {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.boxItem {
+  margin-top: 10px;
+  border: 1px solid white;
+  min-width: 120px;
+  min-height: 120px;
+}
+
+.boxImage {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: 0.5s linear;
+}
+
+.boxText {
+  font-weight: 700;
+  max-width: 100px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.boxItem:hover {
+  border: 1px solid #737373;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .aboutPage {
+    display: block;
+    height: 89vh;
+    overflow-y: scroll;
+  }
+
+  .aboutText {
+    margin-top: -180px;
+    width: 100%;
+    text-align: center;
+    overflow-y: none;
+    min-height: 1000px;
+    overflow-y: hidden;
+  }
+
+  .aboutImage {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .moviesImage {
+    max-width: 100%;
+    overflow: hidden;
+    margin-left: 0;
+  }
+
+  .aboutBox {
+    display: flex-wrap;
+  }
+}
